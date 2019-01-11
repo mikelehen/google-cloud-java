@@ -21,7 +21,7 @@ import synthtool.languages.java as java
 gapic = gcp.GAPICGenerator()
 
 service = 'firestore'
-versions = ['v1beta1']
+versions = ['v1']
 config_pattern = '/google/firestore/artman_firestore.yaml'
 
 for version in versions:
