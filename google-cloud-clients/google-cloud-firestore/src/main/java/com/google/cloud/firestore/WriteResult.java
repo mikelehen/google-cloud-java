@@ -40,7 +40,7 @@ public final class WriteResult {
   }
 
   static WriteResult fromProto(
-      com.google.firestore.v1beta1.WriteResult writeResult,
+      com.google.firestore.v1.WriteResult writeResult,
       com.google.protobuf.Timestamp commitTime) {
     Timestamp timestamp =
         Timestamp.fromProto(writeResult.hasUpdateTime() ? writeResult.getUpdateTime() : commitTime);
